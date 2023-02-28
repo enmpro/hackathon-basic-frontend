@@ -1,0 +1,69 @@
+html {
+    margin-top: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.introcard {
+    text-align: center;
+    border: 2px solid black;
+    background-color: #0060fa;
+    height: 800px;
+}
+
+.namecard {
+    display: flex;
+    justify-content: space-around;
+    border: 2px;
+    height: 400px;
+}
+
+.namecard-1 {
+    display: block;
+    border: 0.115rem solid #fff;
+    width: 300px;
+    height: 400px;
+    margin-left: 35em;
+}
+
+.namecard-1 #avatarshapes {
+    position: absolute;
+    width: 40em;
+    height: 35em;
+    left: 25em;
+    bottom: 24em;
+}
+
+.namecard-1 .johndoe {
+    display: block;
+    width: inherit;
+    height: inherit;
+    position: relative;
+    right: 5%;
+    top: 5%;
+    background-color: #fff;
+    background-size: cover;
+   
+    background-color: wheat;
+    background-image: url("johndoe.jpg");
+
+}
+
+.namecard-2 {
+    
+    margin: auto;
+    background-color: #e3e2ff;
+    border: 2px solid black;
+}
+
+.infosnip {
+    display: flex; 
+    border: 2px solid black;
+    height: 400px;
+    justify-content: space-around;
+}
+
+.infosnip p {
+    border: 2px solid black;
+    width: 200px;
+    margin: auto;
+}
