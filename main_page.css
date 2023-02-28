@@ -5,8 +5,7 @@ html {
 
 .introcard {
     text-align: center;
-    border: 2px solid black;
-    background-color: #0060fa;
+    background: linear-gradient(90deg, #0060fa 55%, #ffba42 33%);
     height: 800px;
 }
 
@@ -49,21 +48,41 @@ html {
 }
 
 .namecard-2 {
-    
     margin: auto;
-    background-color: #e3e2ff;
-    border: 2px solid black;
+    color: #0060fa;
+
 }
+
+.namecard-2 #nameshapes {
+    position: absolute;
+    width: 80em;
+    height: 35em;
+    left: 25em;
+    bottom: 24em;
+} 
+
+.namecard-2 #smallinfo {
+    color: white;
+}
+
 
 .infosnip {
     display: flex; 
     border: 2px solid black;
     height: 400px;
+    margin: auto;
     justify-content: space-around;
 }
 
-.infosnip p {
+.infosnip #infosnip-1 {
+    
     border: 2px solid black;
     width: 200px;
     margin: auto;
+}
+
+.infosnip #infosnip-2 {
+    border: 2px solid black;
+    width: 15%;
+    margin: auto 10em auto 0;
 }
