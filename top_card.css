@@ -4,6 +4,7 @@ html {
     width: 100%;
     text-size-adjust: 100%;
     position: relative;
+    
 }
 
 .introcard {
@@ -14,7 +15,7 @@ html {
 
 .namecard {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 30em;
 }
 
@@ -24,7 +25,8 @@ html {
     border: 0.115rem solid #fff;
     width: 20em;
     height: 25em;
-    margin-left: 29em;
+    margin-left: 30em;
+    margin-right: 0em;
 }
 
 .namecard-1 #avatarshapes {
@@ -52,7 +54,7 @@ html {
 }
 
 .namecard-2 {
-    margin: auto;
+    margin: auto 4em auto auto;
     color: #0060fa;
 
 }
@@ -71,15 +73,15 @@ html {
 
 .belowcard {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .infosnip {
     display: block; 
-    flex: 50%;
     position: relative;
     margin-top: 4em;
-    margin-left: 29em;
-    border: 2px solid black;
+    margin-left: 30em;
+    margin-right: 0em;
     height: 20em;
     justify-content: space-around;
     color:#ffba42;
@@ -93,13 +95,22 @@ html {
 }
 
 .resume {
-    flex: 90%;
-    margin: auto;
-    border: 2px solid black;
+    
+    margin: auto 16em auto auto;
 }
 
+.resume #resume-button {
+    width: 7em;
+    height: 3em;
+    font-size: 2em;
+    background-color: #0060fa;
+    border: 2px solid currentColor;
+    color: white;
+}
+
+
 @media (min-width: 701px) and (max-width: 1700px) {
-    html {
+    html, button {
         font-size: 0.94vw;
     }
 }
