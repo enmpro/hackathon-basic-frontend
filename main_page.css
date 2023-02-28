@@ -1,35 +1,38 @@
 html {
     margin-top: 2em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    text-size-adjust: 100%;
+    position: relative;
 }
 
 .introcard {
     text-align: center;
     background: linear-gradient(90deg, #0060fa 55%, #ffba42 33%);
-    height: 800px;
+    height: 50em;
 }
 
 .namecard {
     display: flex;
     justify-content: space-around;
-    border: 2px;
-    height: 400px;
+    height: 30em;
 }
 
 .namecard-1 {
     display: block;
+    position: relative;
     border: 0.115rem solid #fff;
-    width: 300px;
-    height: 400px;
-    margin-left: 35em;
+    width: 20em;
+    height: 25em;
+    margin-left: 29em;
 }
 
 .namecard-1 #avatarshapes {
     position: absolute;
     width: 40em;
-    height: 35em;
-    left: 25em;
-    bottom: 24em;
+    height: 34.5em;
+    right: -9em;
+    top: -1.5em;
 }
 
 .namecard-1 .johndoe {
@@ -41,6 +44,7 @@ html {
     top: 5%;
     background-color: #fff;
     background-size: cover;
+    margin: auto;
    
     background-color: wheat;
     background-image: url("johndoe.jpg");
@@ -65,24 +69,37 @@ html {
     color: white;
 }
 
-
-.infosnip {
-    display: flex; 
-    border: 2px solid black;
-    height: 400px;
-    margin: auto;
-    justify-content: space-around;
+.belowcard {
+    display: flex;
 }
 
-.infosnip #infosnip-1 {
-    
+.infosnip {
+    display: block; 
+    flex: 50%;
+    position: relative;
+    margin-top: 4em;
+    margin-left: 29em;
     border: 2px solid black;
-    width: 200px;
-    margin: auto;
+    height: 20em;
+    justify-content: space-around;
+    color:#ffba42;
+}
+.infosnip #infosnip-1 {
+    width: 20em;
 }
 
 .infosnip #infosnip-2 {
+    width: 20em;
+}
+
+.resume {
+    flex: 90%;
+    margin: auto;
     border: 2px solid black;
-    width: 15%;
-    margin: auto 10em auto 0;
+}
+
+@media (min-width: 701px) and (max-width: 1700px) {
+    html {
+        font-size: 0.94vw;
+    }
 }
