@@ -1,0 +1,36 @@
+.aboutme {
+    margin-left: 2em;
+    border: 2px solid black;
+}
+
+.paragraph1 {
+    display: block;
+    margin: auto;
+    
+}
+.paragraph1 h3 {
+    margin-left: 6em;
+}
+
+.paragraph1 #p1 {
+    margin: auto;
+    font-size: 2em;
+    width: 30em;
+}
+
+.paragraph1 .word-shapes1 {
+    display: flex;
+}
+
+#paragraphshape1 {
+    width: 18em;
+}
+
+.paragraph2 {
+    border: 2px solid black;
+    margin-left: 50em;
+}
+.paragraph3 {
+    border: 2px solid black;
+    margin-right: 50em;
+}
