@@ -8,22 +8,31 @@
     margin: auto;
     
 }
+
+.paragraph1 .word-shapes1 {
+    display: flex;
+    flex-wrap: nowrap;
+}
 .paragraph1 h3 {
     margin-left: 6em;
 }
 
 .paragraph1 #p1 {
-    margin: auto;
+    flex: 60%;
+    border: 2px solid black;
     font-size: 2em;
     width: 30em;
+    margin: auto;
 }
-
-.paragraph1 .word-shapes1 {
-    display: flex;
+.paragraph1 #p2 {
+    flex: 50%;
+    border: 2px solid black;
+    text-align: center;
+    margin: auto;
 }
 
 #paragraphshape1 {
-    width: 18em;
+    width: 15em;
 }
 
 .paragraph2 {

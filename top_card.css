@@ -84,7 +84,7 @@ html {
     margin-right: 0em;
     height: 20em;
     justify-content: space-around;
-    color:#ffba42;
+    color:#ffad1f;
 }
 .infosnip #infosnip-1 {
     width: 20em;
@@ -96,7 +96,7 @@ html {
 
 .resume {
     
-    margin: auto 16em auto auto;
+    margin: auto 17.5em auto auto;
 }
 
 .resume #resume-button {
