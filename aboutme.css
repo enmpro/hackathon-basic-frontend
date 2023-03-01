@@ -12,16 +12,19 @@
 .paragraph1 .word-shapes1 {
     display: flex;
     flex-wrap: nowrap;
+
 }
 .paragraph1 h3 {
-    margin-left: 6em;
+    font-size: 3em;
 }
 
 .paragraph1 #p1 {
     flex: 60%;
+    flex-basis: 30em;
+	flex-grow: 0;
+	flex-shrink: 0;
     border: 2px solid black;
     font-size: 2em;
-    width: 30em;
     margin: auto;
 }
 .paragraph1 #p2 {
@@ -32,13 +35,24 @@
 }
 
 #paragraphshape1 {
-    width: 15em;
+    width: 17em;
 }
 
 .paragraph2 {
     border: 2px solid black;
     margin-left: 50em;
 }
+
+.paragraph2 h3 {
+    font-size: 3em;
+}
+
+.paragraph2 #p1 {
+    font-size: 2em;
+}
+
+
+
 .paragraph3 {
     border: 2px solid black;
     margin-right: 50em;
