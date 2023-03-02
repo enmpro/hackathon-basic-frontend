@@ -6,52 +6,52 @@
 
 .work-card-one {
     text-align: center;
-    font-size: 15px;
+    font-size: 0.9375em;
     margin-left: 1em;
     margin-right: 1em;
     margin-bottom: 2em;
 
     background-color: #15616D;
     color:#FFECD1;
-    max-width: 450px;
-    min-width: 100px;
+    max-width: 28.125em;
+    min-width: 6.25em;
     width: 100%;
 
-    max-height: 800px;
-    min-height: 100px;
+    max-height: 50em;
+    min-height: 6.25em;
     height: 100%;
 
-    padding-bottom: 1em;
+    padding-bottom: 2.25em;
 
 
 }
 
-.button {
+.button-w {
     
     border: none;
     text-align: center;
-    font-size: large;
+    font-size: 1.5em;
     font-family: inherit;
     transition: 0.3s ease;
     background-color: #001524; 
     color: #FFECD1;
 }
 
-.button:hover {
+.button-w:hover {
     background-color: #78290F;
 }
 
-.button:active {
+.button-w:active {
     background-color: rgba(84, 84, 233, 0.733);
 }
 
 #work-image-one {
-    max-width: 450px;
-    min-width: 100px;
+    max-width: 28.125em;
+    min-width: 6.25em;
     width: 100%;
 
-    max-height: 250px;
-    min-height: 100px;
+    max-height: 15.625em;
+    min-height: 6.25em;
     height: 100%;
 
     object-fit: cover;

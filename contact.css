@@ -1,0 +1,55 @@
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    
+}
+
+form {
+    font-size: 20px;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+section {
+    margin-top: 1em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-title {
+    text-align: center;
+    width: 31.25em;
+    margin: auto;
+    background-color:rgba(84, 84, 233, 0.171);
+
+    transition: 0.5s ease;
+}
+
+
+.form-container {
+    display: block;
+    
+}
+
+
+.button {
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    font-size: 30px;
+
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgba(47, 47, 194, 0.281);
+}
+
+.button:active {
+    background-color: rgba(84, 84, 233, 0.733);
+}
