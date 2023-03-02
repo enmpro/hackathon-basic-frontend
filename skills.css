@@ -1,0 +1,129 @@
+.skills {
+    padding: 5em 0 0 0;
+    margin: auto;
+    width: 100%; 
+    color: #FFECD1;
+}
+
+.skills-container {
+    width: 70em;
+    margin: auto;
+}
+
+.skills-container #skill-title {
+    text-align: center;
+}
+
+/* progress bars */
+
+.fullbar-html {
+    background-color: #D2DBED;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.progressbar-html {
+    background-color: #FF7D00;
+    color: white;
+    padding: 1%;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 90%;
+}
+
+.fullbar-css {
+    background-color: #D2DBED;
+    width:  100%;
+    border-radius: 15px;
+}
+
+.progressbar-css {
+    background-color: #FF7D00;
+    color: white;
+    padding: 1%;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 95%;
+}
+
+.fullbar-js {
+    background-color: #D2DBED;
+    width:  100%;
+    border-radius: 15px;
+}
+
+.progressbar-js {
+    background-color: #FF7D00;
+    color: white;
+    padding: 1%;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 97%;
+}
+
+.fullbar-p {
+    background-color: #D2DBED;
+    width:  100%;
+    border-radius: 15px;
+}
+
+.progressbar-p {
+    background-color: #FF7D00;
+    color: white;
+    padding: 1%;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 80%;
+}
+
+.fullbar-j {
+    background-color: #D2DBED;
+    width:  100%;
+    border-radius: 15px;
+}
+
+.progressbar-j {
+    background-color: #FF7D00;
+    color: white;
+    padding: 1%;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 70%;
+}
+
+.fullbar-msq {
+    background-color: #D2DBED;
+    width:  100%;
+    border-radius: 15px;
+}
+
+.progressbar-msq {
+    background-color: #FF7D00;
+    color: white;
+    padding: 1%;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 88%;
+}
+
+.fullbar-o {
+    background-color: #D2DBED;
+    width:  100%;
+    border-radius: 15px;
+}
+
+.progressbar-o {
+    background-color: #FF7D00;
+    color: white;
+    padding: 1%;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 50%;
+}

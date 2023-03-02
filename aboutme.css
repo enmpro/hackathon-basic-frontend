@@ -27,7 +27,7 @@ color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
 .curiosity #c1 {
     flex: 27%;
     position: relative;
-    top: 1.5em;
+    top: 2em;
 }
 .curiosity #c2 {
     flex: 60%;
@@ -44,12 +44,12 @@ color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
 
 }
 .paragraph1 h3 {
-    font-size: 3em;
+    font-size: 2.75em;
 }
 
 .paragraph1 #p1-1 {
     flex: 60%;
-    flex-basis: 30em;
+    flex-basis: 31em;
 	flex-grow: 0;
 	flex-shrink: 0;
     font-size: 1.5em;
@@ -66,7 +66,7 @@ color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
 }
 
 .paragraph2 h3 {
-    font-size: 2em;
+    font-size: 1.75em;
     display: block;
     margin: auto;
 }
@@ -107,7 +107,7 @@ color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
 }
 
 .paragraph3 h3 {
-    font-size: 3em;
+    font-size: 2.75em;
 }
 
 .word-shapes3 #p3-1 {
@@ -122,6 +122,11 @@ color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
 
 #paragraphshape3 {
     width: 30em;
+}
+
+.paragraph3 h3 {
+    position: relative;
+    top: .5em;
 }
 
 .paragraph3 #p3-1 {

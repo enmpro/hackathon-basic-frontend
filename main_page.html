@@ -9,10 +9,32 @@
     <link rel="stylesheet" href="aboutme.css">
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="hamburger.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="navigation.js"></script> 
 </head>
 
-<body>
+<nav id="topnav">
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger"/>
+    <div id="navitems">
+        <button type="button" onclick="scrollToAbout()">
+            ABOUT
+        </button>
+        <button type="button" onclick="scrollToSkills()">
+            SKILLS
+        </button>
+        <button type="button" onclick="scrollToProjects()">
+            PROJECTS
+        </button>
+        <button type="button" onclick="scrollToContact()">
+            CONTACT
+        </button>
+      </div>
+</nav>
 
+<body>
     <div>
         <header class="introcard">
             <div class="namecard">
@@ -531,8 +553,8 @@
                 <figure class="namecard-2">
                     <h1>John Doe</h1>
                     <h2 id="title">Full Stack Developer.</h2>
-                    <p id="smallinfo">Going back and forth in the front end
-                        and the back end of web development.
+                    <p id="smallinfo">Going back and forth in the Front-end
+                        and the Backend of web development.
                     </p>
                 </figure>
             </div>
@@ -1429,18 +1451,72 @@
         </div>
     </div>
 
-    <div>
-        <h2>
-            My skills
-        </h2>
-        <div>
-
+    <div class="skills">
+        <div class="skills-container">
+            <h2 id="skill-title">
+                MY SKILLS
+            </h2>
+            <div>
+                <hr>
+                <h3>Front-end</h3>
+                <div>
+                    <h4>HTML</h4>
+                    <div class="fullbar-html">
+                        <div class="progressbar-html"></div>
+                    </div>
+                </div>
+                <div>
+                    <h4>CSS</h4>
+                    <div class="fullbar-css">
+                        <div class="progressbar-css"></div>
+                    </div>
+                </div>
+                <div>
+                    <h4>JavaScript</h4>
+                    <div class="fullbar-js">
+                        <div class="progressbar-js"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <hr>
+                <h3>Development Languages</h3>
+                <div>
+                    <h4>Python</h4>
+                    <div class="fullbar-p">
+                        <div class="progressbar-p"></div>
+                    </div>
+                </div>
+                <div>
+                    <h4>Java</h4>
+                    <div class="fullbar-j">
+                        <div class="progressbar-j"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <hr>
+                <h3>Database</h3>
+                <div>
+                    <h4>MySQL</h4>
+                    <div class="fullbar-msq">
+                        <div class="progressbar-msq"></div>
+                    </div>
+                </div>
+                <div>
+                    <h4>Oracle</h4>
+                    <div class="fullbar-o">
+                        <div class="progressbar-o"></div>
+                    </div>
+                </div>
+                <hr>
+            </div>
         </div>
     </div>
 
     <div class="projects">
         <h2>
-            Projects
+            PROJECTS
         </h2>
         <div class="work-row-one">
             <div class="work-card-one">
@@ -1480,16 +1556,15 @@
         </div>
     </div>
 
-    <div>
-        <h2>
-            Contact
-        </h2>
-
-        <div id="profile-pic" class="form-container">
+    <div class="contact">
+        <div class="form-container">
             <form  action="" method="post">
-                    <h1 class="form-title">Get in contact with me!</h1>
+                    <h1 class="form-title">Contact me!</h1>
                     <label for="fname">First name</label>
-                    <input type="text" id="fname" name="fname" placeholder="Enter your first name..." required/>
+                    <div class="center">
+                        <input type="text" id="fname" name="fname" placeholder="Enter your first name..." required/>
+                    </div>
+                    
                     <label for="lname">Last name</label>
                     <input type="text" id="lname" name="lname" placeholder="Enter your last name..." required/>
 

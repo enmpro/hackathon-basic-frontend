@@ -2,14 +2,13 @@
 color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
 */
 html {
-    margin-top: 2em;
     
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
     text-size-adjust: 100%;
     position: relative;
-
-    /*background-color: #001524;*/
+    margin-top: -1em;
+    background-color: #001524;
     
 }
 
@@ -19,9 +18,11 @@ body {
 }
 
 .introcard {
+    margin-top: 2em;
     text-align: center;
     background: linear-gradient(90deg, #15616D 55%, #FF7D00 33%);
     height: 50em;
+    margin-bottom: 2em;
 }
 
 .namecard {

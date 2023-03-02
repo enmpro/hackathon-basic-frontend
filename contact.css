@@ -1,21 +1,25 @@
 
-input[type=text], input[type=email], select, textarea {
-    width: 100%;
-    
+input[type=text], input[type=email], textarea {
+    display: block;
+    font: inherit;
+    font-size: 1em;
+    width: 30em;
+    margin: auto;
+    text-align: center;
 }
 
+
 form {
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 label {
     display: block;
+    font-size: 1.25em;
     margin: 0.5rem 0;
+    text-align: center;
 }
 
-section {
-    margin-top: 1em;
-}
 
 textarea {
     resize: vertical;
@@ -23,21 +27,30 @@ textarea {
 
 .form-title {
     text-align: center;
-    width: 31.25em;
+    width: 10em;
+    padding: 0 0 1em 0;
     margin: auto;
-    background-color:rgba(84, 84, 233, 0.171);
-
+    color:#FF7D00;
     transition: 0.5s ease;
 }
 
 
 .form-container {
+    border: 2px solid black;
     display: block;
-    
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 50em;
+    color: #FFECD1;
+
+    background-color: #15616D;
 }
 
 
 .button {
+    display: block;
+    margin: 1em auto auto auto;
     border-radius: 4px;
     border: none;
     text-align: center;
