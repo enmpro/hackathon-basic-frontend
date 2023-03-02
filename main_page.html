@@ -1,3 +1,4 @@
+<!--Created by Enmanuel Proano-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,12 +14,12 @@
     <link rel="stylesheet" href="hamburger.css">
     <link rel="stylesheet" href="footer.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-    <script src="navigation.js"></script> 
+    <script src="navigation.js"></script>
 </head>
 
 <nav id="topnav">
     <label for="hamburger">&#9776;</label>
-    <input type="checkbox" id="hamburger"/>
+    <input type="checkbox" id="hamburger" />
     <div id="navitems">
         <button type="button" onclick="scrollToAbout()">
             ABOUT
@@ -32,7 +33,7 @@
         <button type="button" onclick="scrollToContact()">
             CONTACT
         </button>
-      </div>
+    </div>
 </nav>
 
 <body>
@@ -557,11 +558,23 @@
                     <p id="smallinfo">Going back and forth in the Front-end
                         and the Backend of web development.
                     </p>
-                <i class='fa fa-github' style="font-size: 4em;"></i>
-                <i class='fa fa-linkedin-square' style="font-size: 4em;"></i>
+                    <i class='fa fa-github' style="font-size: 4em;"></i>
+                    <i class='fa fa-linkedin-square' style="font-size: 4em;"></i>
                 </div>
             </div>
             <div class="belowcard">
+                <figure class="pointshape">
+                    <svg id="pointing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 700 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                        <path
+                            d="M259.99993,63.485759c-130,50-219.99993,139.333112-79.99993,199.333112c84.234681,2.087572,121.519907-161.686766,170.000001,20.000003"
+                            transform="matrix(1.000001 0 0 1.182384 19.99981-65.064546)" fill="none" stroke="#15616d"
+                            stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="28,25" />
+                        <polygon points="0,-22.36068 19.364917,11.18034 -19.364917,11.18034 0,-22.36068"
+                            transform="matrix(.743548 0.791744-.720096 0.676261 372.44966 277.107114)" fill="#15616d"
+                            stroke-width="0" />
+                    </svg>
+                </figure>
                 <div class="infosnip">
                     <p id="infosnip-1">Highly skilled at Front-end and Backend
                         technologies necessary to deploy any type
@@ -1527,7 +1540,8 @@
                 <h6>Application software</h6>
                 <h3>Application Name</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae fringilla nibh.
-                    Vestibulum luctus mollis ex, nec aliquet ex. Phasellus placerat dui ligula, id finibus nulla posuere eu.
+                    Vestibulum luctus mollis ex, nec aliquet ex. Phasellus placerat dui ligula, id finibus nulla posuere
+                    eu.
                     Etiam rutrum, sapien a facilisis varius, nisi tellus auctor sem, eget commodo leo ipsum nec felis.
                     Aenean fermentum quam ut accumsan ullamcorper. Ut velit lorem, aliquet sit amet arcu at, fringilla
                     interdum nunc.
@@ -1544,7 +1558,8 @@
                 <h6>Application software</h6>
                 <h3>Application Name</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae fringilla nibh.
-                    Vestibulum luctus mollis ex, nec aliquet ex. Phasellus placerat dui ligula, id finibus nulla posuere eu.
+                    Vestibulum luctus mollis ex, nec aliquet ex. Phasellus placerat dui ligula, id finibus nulla posuere
+                    eu.
                     Etiam rutrum, sapien a facilisis varius, nisi tellus auctor sem, eget commodo leo ipsum nec felis.
                     Aenean fermentum quam ut accumsan ullamcorper. Ut velit lorem, aliquet sit amet arcu at, fringilla
                     interdum nunc.
@@ -1561,26 +1576,26 @@
 
     <div class="contact">
         <div class="form-container">
-            <form  action="" method="post">
-                    <h1 class="form-title">Contact me!</h1>
-                    <div class="form-elements">
-                        <label for="fname">First name</label>
-                        <input type="text" id="fname" name="fname" placeholder="Enter your first name" required/>
-                    
-                        <label for="lname">Last name</label>
-                        <input type="text" id="lname" name="lname" placeholder="Enter your last name" required/>
+            <form action="" method="post">
+                <h1 class="form-title">Contact me!</h1>
+                <div class="form-elements">
+                    <label for="fname">First name</label>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your first name" required />
 
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Enter your email" required/>
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname" name="lname" placeholder="Enter your last name" required />
 
-                        <label for="subject">Subject</label>
-                        <textarea id="subject" name="subject" placeholder="Enter your message" required></textarea>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required />
 
-                        <input class="button" type="submit" value="Submit"/>
-                    </div>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Enter your message" required></textarea>
+
+                    <input class="button" type="submit" value="Submit" />
+                </div>
             </form>
         </div>
-      
+
     </div>
 </body>
 

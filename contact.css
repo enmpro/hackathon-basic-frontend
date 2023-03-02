@@ -5,9 +5,9 @@ input[type=text], input[type=email], textarea {
     font-size: 1em;
     width: 30em;
     border-radius: 0.2em 0.5em;
-    
+    background-color: #D2DBED;
 }
-
+/*EP*/
 
 form {
     font-size: 1.25em;
