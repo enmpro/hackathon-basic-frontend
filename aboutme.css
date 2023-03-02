@@ -99,3 +99,11 @@ color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
     border: 2px solid black;
     margin-right: 50em;
 }
+
+.paragraph3 h3 {
+    font-size: 3em;
+}
+
+.word-shapes3 #p3-1 {
+    font-size: 1.5em;
+}
