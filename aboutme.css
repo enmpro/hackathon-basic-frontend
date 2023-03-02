@@ -1,3 +1,7 @@
+/*
+color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
+*/
+
 .aboutme {
     margin-left: 2em;
     border: 2px solid black;
@@ -41,7 +45,7 @@
     flex-basis: 30em;
 	flex-grow: 0;
 	flex-shrink: 0;
-    font-size: 2em;
+    font-size: 1.5em;
     margin: auto;
 }
 .paragraph1 #p1-2 {
@@ -55,18 +59,40 @@
 }
 
 .paragraph2 {
-    border: 2px solid black;
-    margin-left: 50em;
+    display: block;
+    margin: auto;
 }
 
 .paragraph2 h3 {
     font-size: 3em;
+    position: relative;
+    left: 12.5em;
+    top: 2em;
+}
+
+#paragraphshape2 {
+    width: 30em;
+}
+
+.paragraph2 .word-shapes2 {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .paragraph2 #p2-1 {
-    font-size: 2em;
+    flex: 50%;
+    flex-basis: 37.5em;
+	flex-grow: 0;
+	flex-shrink: 0;
+    margin: auto;
 }
 
+.paragraph2 #p2-2 {
+    flex: 50%;
+    font-size: 1.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 
 .paragraph3 {
