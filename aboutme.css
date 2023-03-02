@@ -18,7 +18,7 @@
     font-size: 3em;
 }
 
-.paragraph1 #p1 {
+.paragraph1 #p1-1 {
     flex: 60%;
     flex-basis: 30em;
 	flex-grow: 0;
@@ -27,7 +27,7 @@
     font-size: 2em;
     margin: auto;
 }
-.paragraph1 #p2 {
+.paragraph1 #p1-2 {
     flex: 50%;
     border: 2px solid black;
     text-align: center;
@@ -35,7 +35,7 @@
 }
 
 #paragraphshape1 {
-    width: 17em;
+    width: 30em;
 }
 
 .paragraph2 {
@@ -47,7 +47,7 @@
     font-size: 3em;
 }
 
-.paragraph2 #p1 {
+.paragraph2 #p2-1 {
     font-size: 2em;
 }
 
