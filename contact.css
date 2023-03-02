@@ -4,6 +4,7 @@ input[type=text], input[type=email], textarea {
     font: inherit;
     font-size: 1em;
     width: 30em;
+    border: 0;
     border-radius: 0.2em 0.5em;
     background-color: #D2DBED;
 }
