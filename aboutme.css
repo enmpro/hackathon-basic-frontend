@@ -3,8 +3,17 @@ color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
 */
 
 .aboutme {
-    margin-left: 2em;
+    
     border: 2px solid black;
+
+}
+
+.aboutme p {
+    color: #FFECD1;
+}
+
+.aboutme h3 {
+    color: #FFECD1;
 }
 
 .paragraph1 {
@@ -58,16 +67,17 @@ color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
     width: 30em;
 }
 
-.paragraph2 {
+.paragraph2 h3 {
+    font-size: 2em;
     display: block;
     margin: auto;
 }
 
-.paragraph2 h3 {
-    font-size: 3em;
+#p2-2 h3 {
+    
     position: relative;
-    left: 12.5em;
-    top: 2em;
+    margin: auto;
+    
 }
 
 #paragraphshape2 {
@@ -84,20 +94,18 @@ color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
     flex-basis: 37.5em;
 	flex-grow: 0;
 	flex-shrink: 0;
-    margin: auto;
+    margin: auto auto auto 0em;
 }
 
 .paragraph2 #p2-2 {
-    flex: 50%;
+    width: 37.5em;
     font-size: 1.5em;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto auto auto -8em;
 }
 
 
 .paragraph3 {
-    border: 2px solid black;
-    margin-right: 50em;
+    margin: auto;
 }
 
 .paragraph3 h3 {
@@ -106,4 +114,28 @@ color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
 
 .word-shapes3 #p3-1 {
     font-size: 1.5em;
+}
+
+.paragraph3 .word-shapes3 {
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+#paragraphshape3 {
+    width: 30em;
+}
+
+.paragraph3 #p3-1 {
+    flex: 60%;
+    flex-basis: 30em;
+	flex-grow: 0;
+	flex-shrink: 0;
+    font-size: 1.5em;
+    margin: auto;
+}
+.paragraph3 #p3-2 {
+    flex: 50%;
+    text-align: center;
+    margin: auto;
 }
