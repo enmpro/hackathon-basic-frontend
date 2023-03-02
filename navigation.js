@@ -1,7 +1,6 @@
 function scrollToAbout() {
-    var elem = document.querySelector(".aboutme");
     window.scroll({
-        top: elem.offsetTop,
+        top: 900,
         left: 0,
         behavior: "smooth"
     }) 
@@ -17,9 +16,8 @@ function scrollToSkills() {
 }
 
 function scrollToProjects() {
-    var elem = document.querySelector(".projects");
     window.scroll({
-        top: elem.offsetTop,
+        top: 2730,
         left: 0,
         behavior: "smooth"
     }) 

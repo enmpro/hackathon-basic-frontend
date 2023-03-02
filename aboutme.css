@@ -85,6 +85,7 @@ color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
 .paragraph2 .word-shapes2 {
     display: flex;
     flex-wrap: nowrap;
+    margin: auto auto -4em auto;
 }
 
 .paragraph2 #p2-1 {

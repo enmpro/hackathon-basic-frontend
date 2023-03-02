@@ -5,6 +5,7 @@ html {
     
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
+    -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
     position: relative;
     margin-top: -1em;
