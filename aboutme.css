@@ -9,6 +9,24 @@
     
 }
 
+.curiosity {
+    display: flex;
+}
+
+.curiosity #c1 {
+    flex: 27%;
+    position: relative;
+    top: 1.5em;
+}
+.curiosity #c2 {
+    flex: 60%;
+
+}
+
+#curious-shapes {
+    width: 30em;
+}
+
 .paragraph1 .word-shapes1 {
     display: flex;
     flex-wrap: nowrap;
@@ -23,13 +41,11 @@
     flex-basis: 30em;
 	flex-grow: 0;
 	flex-shrink: 0;
-    border: 2px solid black;
     font-size: 2em;
     margin: auto;
 }
 .paragraph1 #p1-2 {
     flex: 50%;
-    border: 2px solid black;
     text-align: center;
     margin: auto;
 }
