@@ -86,6 +86,7 @@ body {
 
 .namecard-2 #smallinfo {
     color: #FFECD1;
+    margin-bottom: 2em;
 }
 
 .belowcard {
@@ -118,22 +119,35 @@ body {
 
 .resume #resume-button {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 11em;
+    width: 9em;
     height: 4em;
     font-size: 1.5em;
     font-weight: bold;
     background-color: #78290F;
     border: 2px solid currentColor;
-    color: #FFECD1;
+    color: #78290F;
+
+    border-radius: 1em 2em;
+    overflow: hidden;
+
     transition: 0.3s ease;
 }
 
 #resume-button:hover {
     background-color: #15616D;
+    color: #FFECD1;
+    width: 11em;
 }
 
 @media (min-width: 701px) and (max-width: 1700px) {
     html, button {
         font-size: 0.94vw;
     }
+}
+
+.footer {
+    text-align: center;
+    color: #FFECD1;
+    padding-bottom: 2em;
+    padding-top: 2em;
 }

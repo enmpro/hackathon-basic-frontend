@@ -550,13 +550,15 @@
                     </svg>
                     <span aria-label="john doe" role="img" class="johndoe"></span>
                 </figure>
-                <figure class="namecard-2">
+                <div class="namecard-2">
                     <h1>John Doe</h1>
                     <h2 id="title">Full Stack Developer.</h2>
                     <p id="smallinfo">Going back and forth in the Front-end
                         and the Backend of web development.
                     </p>
-                </figure>
+                <i class='fa fa-github' style="font-size: 4em;"></i>
+                <i class='fa fa-linkedin-square' style="font-size: 4em;"></i>
+                </div>
             </div>
             <div class="belowcard">
                 <div class="infosnip">
@@ -1560,26 +1562,33 @@
         <div class="form-container">
             <form  action="" method="post">
                     <h1 class="form-title">Contact me!</h1>
-                    <label for="fname">First name</label>
-                    <div class="center">
-                        <input type="text" id="fname" name="fname" placeholder="Enter your first name..." required/>
-                    </div>
+                    <div class="form-elements">
+                        <label for="fname">First name</label>
+                        <input type="text" id="fname" name="fname" placeholder="Enter your first name" required/>
                     
-                    <label for="lname">Last name</label>
-                    <input type="text" id="lname" name="lname" placeholder="Enter your last name..." required/>
+                        <label for="lname">Last name</label>
+                        <input type="text" id="lname" name="lname" placeholder="Enter your last name" required/>
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Enter your email..." required/>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required/>
 
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something..." required></textarea>
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Enter your message" required></textarea>
 
-                    <input class="button" type="submit" value="Submit"/>
-                
+                        <input class="button" type="submit" value="Submit"/>
+                    </div>
             </form>
         </div>
       
     </div>
 </body>
+
+<footer>
+    <div class="footer">
+        <hr>
+        <h2>Created by John Doe</h2>
+        <h3>2023</h3>
+    </div>
+</footer>
 
 </html>

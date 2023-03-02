@@ -30,8 +30,8 @@
 
 #navitems button:hover { 
     background: #78290F; 
-    border-bottom-left-radius: 80px;
-    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 4em;
+    border-bottom-right-radius: 10em;
 }
   
 /* (C) HIDE HAMBURGER */

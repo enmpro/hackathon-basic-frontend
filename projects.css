@@ -28,7 +28,7 @@
     max-width: 30.125em;
     min-width: 6.25em;
     width: 100%;
-
+    border-radius: 2em;
     max-height: 53em;
     min-height: 6.25em;
     height: 53em;
@@ -45,15 +45,24 @@
     
     border: none;
     text-align: center;
+    margin: 1em auto auto auto;
     font-size: 1.5em;
     font-family: inherit;
+    width: 2em;
+    border-radius: 0.5em 1em;
+
+    overflow: hidden;
+
     transition: 0.3s ease;
     background-color: #001524; 
-    color: #FFECD1;
+    color: #001524;
+    
 }
 
 .button-w:hover {
     background-color: #78290F;
+    color: #FFECD1;
+    width: 6em;
 }
 
 .button-w:active {
