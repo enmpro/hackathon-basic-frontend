@@ -123,8 +123,12 @@ body {
     background-color: #78290F;
     border: 2px solid currentColor;
     color: #FFECD1;
+    transition: 0.3s ease;
 }
 
+#resume-button:hover {
+    background-color: #15616D;
+}
 
 @media (min-width: 701px) and (max-width: 1700px) {
     html, button {

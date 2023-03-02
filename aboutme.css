@@ -3,9 +3,7 @@ color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
 */
 
 .aboutme {
-    
-    border: 2px solid black;
-
+    margin-left: 4em;
 }
 
 .aboutme p {

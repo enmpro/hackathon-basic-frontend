@@ -1437,26 +1437,45 @@
         </div>
     </div>
 
-    <div>
+    <div class="projects">
         <h2>
             Projects
         </h2>
-        <div class="work-card-one">
-            <img alt="face-app" id="work-image-one" src="../images/facial_recognition.jpg" />
-            <h6>Application software</h6>
-            <h3>Human Recognizer (App Name)</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae fringilla nibh.
-                Vestibulum luctus mollis ex, nec aliquet ex. Phasellus placerat dui ligula, id finibus nulla posuere eu.
-                Etiam rutrum, sapien a facilisis varius, nisi tellus auctor sem, eget commodo leo ipsum nec felis.
-                Aenean fermentum quam ut accumsan ullamcorper. Ut velit lorem, aliquet sit amet arcu at, fringilla
-                interdum nunc.
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed suscipit
-                elit eget odio
-                aliquam ornare.
-            </p>
-            <p>Python Matlab Java C++</p>
-            <button type="button" class="button">Download</button>
-            <button type="button" class="button">Repository</button>
+        <div class="work-row-one">
+            <div class="work-card-one">
+                <img alt="face-app" id="work-image-one" src="app.jpg" />
+                <h6>Application software</h6>
+                <h3>Application Name</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae fringilla nibh.
+                    Vestibulum luctus mollis ex, nec aliquet ex. Phasellus placerat dui ligula, id finibus nulla posuere eu.
+                    Etiam rutrum, sapien a facilisis varius, nisi tellus auctor sem, eget commodo leo ipsum nec felis.
+                    Aenean fermentum quam ut accumsan ullamcorper. Ut velit lorem, aliquet sit amet arcu at, fringilla
+                    interdum nunc.
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed suscipit
+                    elit eget odio
+                    aliquam ornare.
+                </p>
+                <p>Languages</p>
+                <button type="button" class="button">Download</button>
+                <button type="button" class="button">Repository</button>
+            </div>
+            <div class="work-card-one">
+                <img alt="face-app" id="work-image-one" src="app.jpg" />
+                <h6>Application software</h6>
+                <h3>Application Name</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae fringilla nibh.
+                    Vestibulum luctus mollis ex, nec aliquet ex. Phasellus placerat dui ligula, id finibus nulla posuere eu.
+                    Etiam rutrum, sapien a facilisis varius, nisi tellus auctor sem, eget commodo leo ipsum nec felis.
+                    Aenean fermentum quam ut accumsan ullamcorper. Ut velit lorem, aliquet sit amet arcu at, fringilla
+                    interdum nunc.
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed suscipit
+                    elit eget odio
+                    aliquam ornare.
+                </p>
+                <p>Languages</p>
+                <button type="button" class="button">Download</button>
+                <button type="button" class="button">Repository</button>
+            </div>
         </div>
     </div>
 
@@ -1464,6 +1483,34 @@
         <h2>
             Contact
         </h2>
+
+        <div id="profile-pic" class="form-container">
+                    
+            <form  action="" method="post">
+                
+                    <h1 class="form-title">Get in contact with me!</h1>
+                    <label for="fname">First name</label>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your first name..." required/>
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname" name="lname" placeholder="Enter your last name..." required/>
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="usa">United States of America</option>
+                        <option value="other-countries">Other countries</option>
+                    </select>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email..." required/>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something..." required></textarea>
+
+                    <input class="button" type="submit" value="Submit"/>
+                
+            </form>
+        </div>
+      
     </div>
 </body>
 
