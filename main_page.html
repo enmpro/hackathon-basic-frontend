@@ -1,3 +1,4 @@
+<!--Created by Enmanuel Proano-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,10 +8,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="top_card.css">
     <link rel="stylesheet" href="aboutme.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="navigation.js"></script>
 </head>
 
-<body>
+<nav id="topnav">
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger" />
+    <div id="navitems">
+        <button type="button" onclick="scrollToAbout()">
+            ABOUT
+        </button>
+        <button type="button" onclick="scrollToSkills()">
+            SKILLS
+        </button>
+        <button type="button" onclick="scrollToProjects()">
+            PROJECTS
+        </button>
+        <button type="button" onclick="scrollToContact()">
+            CONTACT
+        </button>
+    </div>
+</nav>
 
+<body>
     <div>
         <header class="introcard">
             <div class="namecard">
@@ -18,523 +44,537 @@
                     <svg id="avatarshapes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         viewBox="0 0 800 800" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
                         <g transform="matrix(.44392 0 0 0.44392 47.970863 384.230641)">
-                            <circle r="7.23684" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 0)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 0)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 0)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 0)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 0)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 0)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 0)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 0)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 0)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 0)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 0)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 0)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(0 66.6667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 66.6667)" fill="#ffa200"
+                            <circle r="7.23684" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 0)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(133.333 0)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(200 0)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(266.667 0)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(333.333 0)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(400 0)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(466.667 0)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(533.333 0)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(600 0)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(666.667 0)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(733.333 0)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(800 0)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(0 66.6667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 66.6667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 66.6667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(133.333 66.6667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 66.6667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 66.6667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(200 66.6667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(266.667 66.6667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 66.6667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(333.333 66.6667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 66.6667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 66.6667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(400 66.6667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(466.667 66.6667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 66.6667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(533.333 66.6667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 66.6667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 66.6667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(600 66.6667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(666.667 66.6667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 66.6667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(733.333 66.6667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 66.6667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(0 133.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 133.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(800 66.6667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(0 133.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 133.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 133.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(133.333 133.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 133.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 133.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(200 133.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(266.667 133.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 133.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(333.333 133.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 133.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(400 133.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 133.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(466.667 133.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 133.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(533.333 133.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 133.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(600 133.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 133.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(666.667 133.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 133.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(733.333 133.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 133.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(0 200)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 200)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 200)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 200)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(800 133.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(0 200)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 200)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(133.333 200)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(200 200)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 200)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 200)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 200)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 200)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 200)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 200)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 200)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 200)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(266.667 200)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(333.333 200)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(400 200)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(466.667 200)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(533.333 200)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(600 200)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(666.667 200)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(733.333 200)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 200)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(0 266.667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 266.667)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(800 200)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(0 266.667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 266.667)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 266.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(133.333 266.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 266.667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 266.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(200 266.667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(266.667 266.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 266.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(333.333 266.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 266.667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 266.667)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(400 266.667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(466.667 266.667)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 266.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(533.333 266.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 266.667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 266.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(600 266.667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(666.667 266.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 266.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(733.333 266.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 266.667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(0 333.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 333.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(800 266.667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(0 333.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 333.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 333.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(133.333 333.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 333.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 333.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(200 333.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(266.667 333.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 333.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(333.333 333.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 333.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 333.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(400 333.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(466.667 333.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 333.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(533.333 333.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 333.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 333.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(600 333.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(666.667 333.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 333.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(733.333 333.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 333.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(0 400)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 400)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 400)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 400)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 400)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 400)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(800 333.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(0 400)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 400)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(133.333 400)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(200 400)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(266.667 400)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(333.333 400)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 400)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 400)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 400)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 400)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(400 400)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(466.667 400)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(533.333 400)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(600 400)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 400)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 400)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(666.667 400)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(733.333 400)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 400)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(0 466.667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 466.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(800 400)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(0 466.667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 466.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 466.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(133.333 466.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 466.667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 466.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(200 466.667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(266.667 466.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 466.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(333.333 466.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 466.667)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(400 466.667)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 466.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(466.667 466.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 466.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(533.333 466.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 466.667)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(600 466.667)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 466.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(666.667 466.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 466.667)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(733.333 466.667)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 466.667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(0 533.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 533.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(800 466.667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(0 533.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 533.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 533.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(133.333 533.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 533.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 533.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(200 533.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(266.667 533.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 533.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(333.333 533.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 533.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(400 533.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 533.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(466.667 533.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 533.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(533.333 533.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 533.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 533.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(600 533.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(666.667 533.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 533.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(733.333 533.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 533.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(0 600)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 600)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 600)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(800 533.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(0 600)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 600)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(133.333 600)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 600)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 600)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 600)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 600)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 600)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 600)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(200 600)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(266.667 600)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(333.333 600)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(400 600)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(466.667 600)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(533.333 600)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 600)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 600)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 600)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(600 600)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(666.667 600)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(733.333 600)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 600)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(0 666.667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 666.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(800 600)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(0 666.667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 666.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 666.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(133.333 666.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 666.667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 666.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(200 666.667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(266.667 666.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 666.667)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(333.333 666.667)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 666.667)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(400 666.667)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 666.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(466.667 666.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 666.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(533.333 666.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 666.667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 666.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(600 666.667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(666.667 666.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 666.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(733.333 666.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 666.667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(0 733.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 733.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(800 666.667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(0 733.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 733.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 733.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(133.333 733.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 733.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 733.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(200 733.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(266.667 733.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 733.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(333.333 733.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 733.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(400 733.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 733.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(466.667 733.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 733.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(533.333 733.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 733.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 733.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(600 733.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(666.667 733.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 733.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(733.333 733.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 733.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(0 800)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 800)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 800)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 800)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 800)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 800)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 800)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 800)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 800)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 800)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 800)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 800)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 800)" fill="#ffa200" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(800 733.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(0 800)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 800)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(133.333 800)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(200 800)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(266.667 800)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(333.333 800)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(400 800)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(466.667 800)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(533.333 800)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(600 800)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(666.667 800)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(733.333 800)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(800 800)" fill="#FF7D00" stroke-width="3.5" />
                         </g>
                         <g transform="matrix(.44392 0 0 0.44392 403.212578 29.094635)">
-                            <circle r="7.23684" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 0)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 0)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 0)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 0)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 0)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 0)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 0)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 0)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 0)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 0)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 0)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 0)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(0 66.6667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 66.6667)" fill="#ffa200"
+                            <circle r="7.23684" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 0)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(133.333 0)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(200 0)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(266.667 0)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(333.333 0)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(400 0)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(466.667 0)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(533.333 0)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(600 0)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(666.667 0)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(733.333 0)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(800 0)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(0 66.6667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 66.6667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 66.6667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(133.333 66.6667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 66.6667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 66.6667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(200 66.6667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(266.667 66.6667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 66.6667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(333.333 66.6667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 66.6667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 66.6667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(400 66.6667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(466.667 66.6667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 66.6667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(533.333 66.6667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 66.6667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 66.6667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(600 66.6667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(666.667 66.6667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 66.6667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(733.333 66.6667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 66.6667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(0 133.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 133.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(800 66.6667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(0 133.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 133.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 133.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(133.333 133.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 133.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 133.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(200 133.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(266.667 133.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 133.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(333.333 133.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 133.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(400 133.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 133.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(466.667 133.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 133.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(533.333 133.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 133.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(600 133.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 133.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(666.667 133.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 133.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(733.333 133.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 133.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(0 200)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 200)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 200)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 200)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(800 133.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(0 200)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 200)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(133.333 200)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(200 200)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 200)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 200)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 200)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 200)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 200)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 200)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 200)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 200)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(266.667 200)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(333.333 200)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(400 200)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(466.667 200)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(533.333 200)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(600 200)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(666.667 200)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(733.333 200)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 200)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(0 266.667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 266.667)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(800 200)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(0 266.667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 266.667)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 266.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(133.333 266.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 266.667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 266.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(200 266.667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(266.667 266.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 266.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(333.333 266.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 266.667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 266.667)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(400 266.667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(466.667 266.667)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 266.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(533.333 266.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 266.667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 266.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(600 266.667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(666.667 266.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 266.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(733.333 266.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 266.667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(0 333.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 333.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(800 266.667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(0 333.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 333.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 333.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(133.333 333.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 333.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 333.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(200 333.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(266.667 333.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 333.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(333.333 333.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 333.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 333.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(400 333.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(466.667 333.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 333.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(533.333 333.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 333.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 333.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(600 333.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(666.667 333.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 333.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(733.333 333.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 333.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(0 400)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 400)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 400)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 400)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 400)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 400)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(800 333.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(0 400)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 400)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(133.333 400)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(200 400)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(266.667 400)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(333.333 400)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 400)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 400)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 400)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 400)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(400 400)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(466.667 400)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(533.333 400)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(600 400)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 400)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 400)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(666.667 400)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(733.333 400)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 400)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(0 466.667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 466.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(800 400)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(0 466.667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 466.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 466.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(133.333 466.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 466.667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 466.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(200 466.667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(266.667 466.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 466.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(333.333 466.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 466.667)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(400 466.667)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 466.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(466.667 466.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 466.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(533.333 466.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 466.667)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(600 466.667)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 466.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(666.667 466.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 466.667)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(733.333 466.667)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 466.667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(0 533.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 533.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(800 466.667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(0 533.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 533.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 533.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(133.333 533.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 533.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 533.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(200 533.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(266.667 533.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 533.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(333.333 533.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 533.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(400 533.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 533.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(466.667 533.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 533.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(533.333 533.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 533.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 533.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(600 533.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(666.667 533.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 533.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(733.333 533.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 533.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(0 600)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 600)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 600)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(800 533.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(0 600)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 600)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(133.333 600)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 600)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 600)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 600)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 600)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 600)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 600)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(200 600)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(266.667 600)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(333.333 600)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(400 600)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(466.667 600)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(533.333 600)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 600)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 600)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 600)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(600 600)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(666.667 600)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(733.333 600)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 600)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(0 666.667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 666.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(800 600)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(0 666.667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 666.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 666.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(133.333 666.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 666.667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 666.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(200 666.667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(266.667 666.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 666.667)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(333.333 666.667)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 666.667)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(400 666.667)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 666.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(466.667 666.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 666.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(533.333 666.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 666.667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 666.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(600 666.667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(666.667 666.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 666.667)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(733.333 666.667)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 666.667)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(0 733.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 733.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(800 666.667)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(0 733.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 733.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 733.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(133.333 733.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 733.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 733.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(200 733.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(266.667 733.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 733.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(333.333 733.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 733.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(400 733.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 733.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(466.667 733.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 733.333)" fill="none" stroke="#ffa200"
+                            <circle r="7.23684" transform="translate(533.333 733.333)" fill="none" stroke="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 733.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 733.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(600 733.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(666.667 733.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 733.333)" fill="#ffa200"
+                            <circle r="7.23684" transform="translate(733.333 733.333)" fill="#FF7D00"
                                 stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 733.333)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(0 800)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(66.6667 800)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(133.333 800)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(200 800)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(266.667 800)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(333.333 800)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(400 800)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(466.667 800)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(533.333 800)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(600 800)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(666.667 800)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(733.333 800)" fill="#ffa200" stroke-width="3.5" />
-                            <circle r="7.23684" transform="translate(800 800)" fill="#ffa200" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(800 733.333)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(0 800)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(66.6667 800)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(133.333 800)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(200 800)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(266.667 800)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(333.333 800)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(400 800)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(466.667 800)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(533.333 800)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(600 800)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(666.667 800)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(733.333 800)" fill="#FF7D00" stroke-width="3.5" />
+                            <circle r="7.23684" transform="translate(800 800)" fill="#FF7D00" stroke-width="3.5" />
                         </g>
                         <path
                             d="M34.564882,184.574009c46.21324-24.680048,58.312866-205.030825,75.807744-63.482796s-88.784,306.503719-3.212578,147.973185s108.300695-257.413676,118.378814-154.398342s32.807392,128.016547,32.807392,124.803969s45.291348-246.87247,44.087443-118.378815"
-                            transform="translate(.000001 0.000004)" fill="none" stroke="#ffa200" stroke-width="4" />
+                            transform="translate(.000001 0.000004)" fill="none" stroke="#FF7D00" stroke-width="4" />
                         <path
                             d="M761.561156,742.579219C715.283689,580.186058,808.498688,479.44024,702.37197,594.606033s-141.548472,347.104168-118.378814,134.010669s105.528503-341.173928-6.425156-193.200299-125.015742,9.577781-111.953659-36.019527s20.519082-58.660582,8.653252-44.127698"
-                            transform="translate(-3.212578-35.479789)" fill="none" stroke="#ffa200" stroke-width="3" />
+                            transform="translate(-3.212578-35.479789)" fill="none" stroke="#FF7D00" stroke-width="3" />
                     </svg>
                     <span aria-label="john doe" role="img" class="johndoe"></span>
                 </figure>
-                <figure class="namecard-2">
+                <div class="namecard-2">
                     <h1>John Doe</h1>
-                    <h2>Full Stack Developer.</h2>
-                    <p id="smallinfo">Going back and forth in the front end
-                        and the back end of web development.
+                    <h2 id="title">Full Stack Developer.</h2>
+                    <p id="smallinfo">Going back and forth in the Front-end
+                        and the Backend of web development.
                     </p>
-                </figure>
+                    <i class='fa fa-github' style="font-size: 4em;"></i>
+                    <i class='fa fa-linkedin-square' style="font-size: 4em;"></i>
+                </div>
             </div>
             <div class="belowcard">
+                <figure class="pointshape">
+                    <svg id="pointing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 700 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                        <path
+                            d="M259.99993,63.485759c-130,50-219.99993,139.333112-79.99993,199.333112c84.234681,2.087572,121.519907-161.686766,170.000001,20.000003"
+                            transform="matrix(1.000001 0 0 1.182384 19.99981-65.064546)" fill="none" stroke="#15616d"
+                            stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="28,25" />
+                        <polygon points="0,-22.36068 19.364917,11.18034 -19.364917,11.18034 0,-22.36068"
+                            transform="matrix(.743548 0.791744-.720096 0.676261 372.44966 277.107114)" fill="#15616d"
+                            stroke-width="0" />
+                    </svg>
+                </figure>
                 <div class="infosnip">
                     <p id="infosnip-1">Highly skilled at Front-end and Backend
                         technologies necessary to deploy any type
@@ -549,22 +589,735 @@
                 </div>
                 <div class="resume">
                     <button id="resume-button">
-                        See My Resume
+                        SEE MY RESUME
                     </button>
                 </div>
             </div>
         </header>
     </div>
     <div>
-        
+
     </div>
 
     <div>
         <div class="aboutme">
             <div class="paragraph1">
-                <h3>Curiosity</h3>
+                <div class="curiosity">
+                    <h3 id="c1">Curiosity</h3>
+                    <figure id="c2">
+                        <svg id="curious-shapes" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 900 300"
+                            shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                            <g>
+                                <ellipse rx="5" ry="5" transform="translate(105 75)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(125 75)" fill="#FF7D00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(145 75)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(165 75)" fill="#d2dbed" stroke-width="0" />
+                            </g>
+                            <g transform="translate(20 20)">
+                                <ellipse rx="5" ry="5" transform="translate(105 75)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(125 75)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(145 75)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(165 75)" fill="#FF7D00" stroke-width="0" />
+                            </g>
+                            <g transform="translate(90 0)">
+                                <ellipse rx="5" ry="5" transform="translate(105 75)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(125 75)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(145 75)" fill="#FF7D00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(165 75)" fill="#d2dbed" stroke-width="0" />
+                            </g>
+                            <g transform="translate(200 160)">
+                                <ellipse rx="5" ry="5" transform="translate(105 75)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(125 75)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(145 75)" fill="#FF7D00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(165 75)" fill="#d2dbed" stroke-width="0" />
+                            </g>
+                            <g transform="translate(430 60)">
+                                <ellipse rx="5" ry="5" transform="translate(105 75)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(125 75)" fill="#FF7D00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(145 75)" fill="#FF7D00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(165 75)" fill="#FF7D00" stroke-width="0" />
+                            </g>
+                            <g transform="translate(630-20)">
+                                <ellipse rx="5" ry="5" transform="translate(105 75)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(125 75)" fill="#FF7D00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(145 75)" fill="#FF7D00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(165 75)" fill="#FF7D00" stroke-width="0" />
+                            </g>
+                            <g transform="translate(700 10)">
+                                <ellipse rx="5" ry="5" transform="translate(105 75)" fill="#FF7D00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(125 75)" fill="#FF7D00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(145 75)" fill="#FF7D00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(165 75)" fill="#FF7D00" stroke-width="0" />
+                            </g>
+                            <g transform="translate(600 0)">
+                                <ellipse rx="5" ry="5" transform="translate(105 75)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(125 75)" fill="#FF7D00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(145 75)" fill="#FF7D00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(165 75)" fill="#FF7D00" stroke-width="0" />
+                            </g>
+                            <g transform="translate(400 80)">
+                                <ellipse rx="5" ry="5" transform="translate(105 75)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(125 75)" fill="#FF7D00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(145 75)" fill="#FF7D00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(165 75)" fill="#d2dbed" stroke-width="0" />
+                            </g>
+                            <g transform="translate(230 180)">
+                                <ellipse rx="5" ry="5" transform="translate(105 75)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(125 75)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(145 75)" fill="#FF7D00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(165 75)" fill="#FF7D00" stroke-width="0" />
+                            </g>
+                            <g>
+                                <g transform="matrix(.2 0 0 0.2 284 108)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 260 108)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 260 120)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 272 120)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 272 108)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 284 120)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 296 120)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 296 108)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 284 84)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 284 96)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 296 96)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 296 84)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 260 84)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 260 96)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 272 96)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 272 84)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                            </g>
+                            <g transform="translate(374 94)">
+                                <g transform="matrix(.2 0 0 0.2 284 108)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 260 108)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 260 120)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 272 120)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 272 108)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 284 120)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 296 120)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 296 108)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 284 84)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 284 96)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 296 96)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 296 84)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 260 84)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 260 96)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 272 96)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                                <g transform="matrix(.2 0 0 0.2 272 84)">
+                                    <ellipse rx="5" ry="5" transform="translate(335 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 135)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 115)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 135)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(335 155)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(355 155)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 135)" fill="#FF7D00"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 115)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                    <ellipse rx="5" ry="5" transform="translate(375 155)" fill="#d2dbed"
+                                        stroke-width="0" />
+                                </g>
+                            </g>
+                        </svg>
+                    </figure>
+
+                </div>
                 <div class="word-shapes1">
-                    <p id="p1">
+                    <p id="p1-1">
                         Since I was young, I have always been interested
                         in websites and how they were developed; being entranced
                         in trying to figure out what the weird symbols and words
@@ -572,115 +1325,286 @@
                         I was able to get my first steps into the right direction
                         into web development with online tutorials and Google.
                     </p>
-                    <figure id="p2">
-                        <svg id="paragraphshape1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-                            viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
-                            <path d="M30,50h30v30h30v30h30v30h30" fill="none" stroke="#0060fa" stroke-width="0.6" />
-                            <path d="M280,60h-20v-20h-20v-20h-20" fill="none" stroke="#0060fa" stroke-width="0.6" />
-                            <path d="M260,160h-30v30h-30v30h-30v30" fill="none" stroke="#0060fa" stroke-width="0.6" />
-                            <path d="M30,200h30v30h30v30h30" fill="none" stroke="#0060fa" stroke-width="0.6" />
-                            <g>
-                                <ellipse rx="5" ry="5" transform="translate(165 75)" fill="#d2dbed" stroke-width="0" />
-                                <ellipse rx="5" ry="5" transform="translate(185 75)" fill="#d2dbed" stroke-width="0" />
-                                <ellipse rx="5" ry="5" transform="translate(165 95)" fill="#d2dbed" stroke-width="0" />
-                                <ellipse rx="5" ry="5" transform="translate(185 95)" fill="#ffba42" stroke-width="0" />
-                            </g>
-                            <g transform="translate(0-40)">
-                                <ellipse rx="5" ry="5" transform="translate(165 75)" fill="#d2dbed" stroke-width="0" />
-                                <ellipse rx="5" ry="5" transform="translate(185 75)" fill="#ffba42" stroke-width="0" />
-                                <ellipse rx="5" ry="5" transform="translate(165 95)" fill="#ffba42" stroke-width="0" />
-                                <ellipse rx="5" ry="5" transform="translate(185 95)" fill="#d2dbed" stroke-width="0" />
-                            </g>
-                            <g transform="translate(-130 80)">
-                                <ellipse rx="5" ry="5" transform="translate(165 75)" fill="#ffba42" stroke-width="0" />
-                                <ellipse rx="5" ry="5" transform="translate(185 75)" fill="#ffba42" stroke-width="0" />
-                                <ellipse rx="5" ry="5" transform="translate(165 95)" fill="#ffba42" stroke-width="0" />
-                                <ellipse rx="5" ry="5" transform="translate(185 95)" fill="#ffba42" stroke-width="0" />
-                            </g>
-                            <g transform="translate(-90 80)">
-                                <ellipse rx="5" ry="5" transform="translate(165 75)" fill="#d2dbed" stroke-width="0" />
-                                <ellipse rx="5" ry="5" transform="translate(185 75)" fill="#d2dbed" stroke-width="0" />
-                                <ellipse rx="5" ry="5" transform="translate(165 95)" fill="#d2dbed" stroke-width="0" />
-                                <ellipse rx="5" ry="5" transform="translate(185 95)" fill="#ffba42" stroke-width="0" />
-                            </g>
-                            <g transform="translate(50 180)">
-                                <ellipse rx="5" ry="5" transform="translate(165 75)" fill="#ffba42" stroke-width="0" />
-                                <ellipse rx="5" ry="5" transform="translate(185 75)" fill="#d2dbed" stroke-width="0" />
-                                <ellipse rx="5" ry="5" transform="translate(165 95)" fill="#d2dbed" stroke-width="0" />
-                                <ellipse rx="5" ry="5" transform="translate(185 95)" fill="#d2dbed" stroke-width="0" />
-                            </g>
-                            <g transform="translate(90 180)">
-                                <ellipse rx="5" ry="5" transform="translate(165 75)" fill="#d2dbed" stroke-width="0" />
-                                <ellipse rx="5" ry="5" transform="translate(185 75)" fill="#d2dbed" stroke-width="0" />
-                                <ellipse rx="5" ry="5" transform="translate(165 95)" fill="#ffba42" stroke-width="0" />
-                                <ellipse rx="5" ry="5" transform="translate(185 95)" fill="#d2dbed" stroke-width="0" />
-                            </g>
+                    <figure id="p1-2">
+                        <svg id="paragraphshape1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 700 300"
+                            shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                            <path d="M100,100l20,20l20-20l20,20l20-20l20,20" fill="none" stroke="#15616D"
+                                stroke-width="1.4" />
+                            <path d="M300,260h30v-30h30v-30h30" fill="none" stroke="#15616D" stroke-width="1.4" />
+                            <path d="M600,60L580,40L560,60L540,40L520,60" fill="none" stroke="#15616D"
+                                stroke-width="1.4" />
+                            <polygon
+                                points="0,-14.142136 13.44997,-4.37016 8.312539,11.441228 -8.312539,11.441228 -13.44997,-4.37016 0,-14.142136"
+                                transform="matrix(.707107-.707107 0.707107 0.707107 360 100)" fill="#FF7D00"
+                                stroke-width="0" />
+                            <polygon
+                                points="0,-22.36068 21.26627,-6.90983 13.143278,18.09017 -13.143278,18.09017 -21.26627,-6.90983 0,-22.36068"
+                                transform="matrix(-.894427 0.447214-.447214-.894427 170 220)" fill="#d2dbed"
+                                stroke-width="0" />
+                            <polygon
+                                points="0,-20 19.02113,-6.18034 11.755705,16.18034 -11.755705,16.18034 -19.02113,-6.18034 0,-20"
+                                transform="matrix(0-1 1 0 570 194.309095)" fill="#d2dbed" stroke-width="0" />
                         </svg>
                     </figure>
                 </div>
             </div>
             <div class="paragraph2">
-                <h3>First steps</h3>
-                <p id="p1">
-                    Throughout college, I have been working on improving
-                    my skills related to Front-end development, but also
-                    started to include work on Backend development; I felt
-                    as if I needed to prepare myself for the real world
-                    once I graduate from college.
 
-                </p>
+                <div class="word-shapes2">
+                    <figure id="p2-1">
+                        <svg id="paragraphshape2" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 700 300"
+                            shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                            <g transform="translate(-20 0)">
+                                <ellipse rx="5" ry="5" transform="translate(105 105)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(105 125)" fill="#ff7d00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(105 145)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(125 105)" fill="#ff7d00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(125 125)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(125 145)" fill="#ff7d00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(125 165)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(125 185)" fill="#ff7d00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(145 185)" fill="#ff7d00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(145 165)" fill="#d2dbed" stroke-width="0" />
+                            </g>
+                            <g>
+                                <ellipse rx="5" ry="5" transform="translate(305 35)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(325 35)" fill="#ff7d00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(335 55)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(355 55)" fill="#ff7d00" stroke-width="0" />
+                            </g>
+                            <g transform="translate(70 10)">
+                                <ellipse rx="5" ry="5" transform="translate(435 235)" fill="#ff7d00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(425 215)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(445 215)" fill="#ff7d00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(425 255)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(445 255)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(455 235)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(415 235)" fill="#d2dbed" stroke-width="0" />
+                            </g>
+                            <g>
+                                <ellipse rx="5" ry="5" transform="translate(225 255)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(225 235)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(245 255)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(245 235)" fill="#ff7d00" stroke-width="0" />
+                            </g>
+                            <g transform="translate(30 0)">
+                                <ellipse rx="5" ry="5" transform="translate(545 105)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(545 85)" fill="#ff7d00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(565 85)" fill="#ff7d00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(565 65)" fill="#d2dbed" stroke-width="0" />
+                            </g>
+                            <g transform="translate(50 0)">
+                                <ellipse rx="5" ry="5" transform="translate(325 145)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(345 145)" fill="#ff7d00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(345 165)" fill="#ff7d00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(325 165)" fill="#ff7d00" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(365 155)" fill="#d2dbed" stroke-width="0" />
+                                <ellipse rx="5" ry="5" transform="translate(383 145)" fill="#ff7d00" stroke-width="0" />
+                            </g>
+                        </svg>
+
+                    </figure>
+                    <div id="p2-2">
+                        <h3>First steps</h3>
+                        <p>
+                            Throughout college, I have been working on improving
+                            my skills related to Front-end development, but also
+                            started to include work on Backend development; I felt
+                            as if I needed to prepare myself for the real world
+                            once I graduate from college.
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="paragraph3">
                 <h3>Towards the future</h3>
-                <p>
-                    Fast forward to today, I have gathered many years of
-                    experience, refining my skills and incorporating more
-                    technologies to my resume. Working throughout numerous
-                    companies and freelancing my services to clients, I have
-                    built a strong portfolio; showcasing my skills and
-                    making others confident in that whenever I am
-                    employed, I will deliver effecient websites and
-                    systems behind.
-                </p>
+                <div class="word-shapes3">
+                    <p id="p3-1">
+                        Fast forward to today, I have gathered many years of
+                        experience, refining my skills and incorporating more
+                        technologies to my resume. Working throughout numerous
+                        companies and freelancing my services to clients, I have
+                        built a strong portfolio; showcasing my skills and
+                        making others confident in that whenever I am
+                        employed, I will deliver efficient websites and
+                        systems behind.
+                    </p>
+                    <figure id="p3-2">
+                        <svg id="paragraphshape3" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 700 300"
+                            shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                            <path
+                                d="M60,160c123.972921,102.265844,80.07088-41.252282,150-70c23.712978-.755189,41.543167-30.765303,106.489654,28.866772"
+                                transform="translate(-16.489654 71.133228)" fill="none" stroke="#15616d"
+                                stroke-width="10" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-dasharray="28,25" />
+                            <path d="M60,169.217643c94.729993.310772,40-81.89901,110-131.89901s60-40,130-40"
+                                transform="translate(290 52.681367)" fill="none" stroke="#15616d" stroke-width="10"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="28,25" />
+                            <path d="" fill="none" stroke="#3f5787" stroke-width="10" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-dasharray="28,25" />
+                            <polygon
+                                points="0,-21.89901 18.965099,-10.949505 18.965099,10.949505 0,21.89901 -18.965099,10.949505 -18.965099,-10.949505 0,-21.89901"
+                                transform="translate(318.965099 221.453189)" fill="#ff7d00" stroke-width="0" />
+                            <polygon
+                                points="0,-21.89901 18.965099,-10.949505 18.965099,10.949505 0,21.89901 -18.965099,10.949505 -18.965099,-10.949505 0,-21.89901"
+                                transform="translate(618.965099 49.213936)" fill="#ff7d00" stroke-width="0" />
+                            <polygon
+                                points="0,-21.89901 1.802068,-2.480334 20.827196,-6.767166 2.915807,0.947403 12.871915,17.716671 0,3.065861 -12.871915,17.716671 -2.915807,0.947403 -20.827196,-6.767166 -1.802068,-2.480334 0,-21.89901"
+                                transform="matrix(-1 0 0-1 80.827196 177.655169)" fill="#d2dbed" stroke-width="0" />
+                            <polygon
+                                points="0,-21.89901 1.802068,-2.480334 20.827196,-6.767166 2.915807,0.947403 12.871915,17.716671 0,3.065861 -12.871915,17.716671 -2.915807,0.947403 -20.827196,-6.767166 -1.802068,-2.480334 0,-21.89901"
+                                transform="matrix(-1 0 0-1 350 58.10099)" fill="#d2dbed" stroke-width="0" />
+                            <polygon
+                                points="0,-21.89901 1.802068,-2.480334 20.827196,-6.767166 2.915807,0.947403 12.871915,17.716671 0,3.065861 -12.871915,17.716671 -2.915807,0.947403 -20.827196,-6.767166 -1.802068,-2.480334 0,-21.89901"
+                                transform="matrix(-1 0 0-1 550.827196 241.26103)" fill="#d2dbed" stroke-width="0" />
+                        </svg>
+                    </figure>
+                </div>
             </div>
         </div>
     </div>
 
-    <div>
-        <h2>
-            My skills
-        </h2>
-
-    </div>
-
-    <div>
-        <h2>
-            Projects
-        </h2>
-        <div class="work-card-one">
-            <img alt="face-app" id="work-image-one" src="../images/facial_recognition.jpg" />
-            <h6>Application software</h6>
-            <h3>Human Recognizer (App Name)</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae fringilla nibh.
-                Vestibulum luctus mollis ex, nec aliquet ex. Phasellus placerat dui ligula, id finibus nulla posuere eu.
-                Etiam rutrum, sapien a facilisis varius, nisi tellus auctor sem, eget commodo leo ipsum nec felis.
-                Aenean fermentum quam ut accumsan ullamcorper. Ut velit lorem, aliquet sit amet arcu at, fringilla
-                interdum nunc.
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed suscipit
-                elit eget odio
-                aliquam ornare.
-            </p>
-            <p>Python Matlab Java C++</p>
-            <button type="button" class="button">Download</button>
-            <button type="button" class="button">Repository</button>
+    <div class="skills">
+        <div class="skills-container">
+            <h2 id="skill-title">
+                MY SKILLS
+            </h2>
+            <div>
+                <hr>
+                <h3>Front-end</h3>
+                <div>
+                    <h4>HTML</h4>
+                    <div class="fullbar-html">
+                        <div class="progressbar-html"></div>
+                    </div>
+                </div>
+                <div>
+                    <h4>CSS</h4>
+                    <div class="fullbar-css">
+                        <div class="progressbar-css"></div>
+                    </div>
+                </div>
+                <div>
+                    <h4>JavaScript</h4>
+                    <div class="fullbar-js">
+                        <div class="progressbar-js"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <hr>
+                <h3>Development Languages</h3>
+                <div>
+                    <h4>Python</h4>
+                    <div class="fullbar-p">
+                        <div class="progressbar-p"></div>
+                    </div>
+                </div>
+                <div>
+                    <h4>Java</h4>
+                    <div class="fullbar-j">
+                        <div class="progressbar-j"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <hr>
+                <h3>Database</h3>
+                <div>
+                    <h4>MySQL</h4>
+                    <div class="fullbar-msq">
+                        <div class="progressbar-msq"></div>
+                    </div>
+                </div>
+                <div>
+                    <h4>Oracle</h4>
+                    <div class="fullbar-o">
+                        <div class="progressbar-o"></div>
+                    </div>
+                </div>
+                <hr>
+            </div>
         </div>
     </div>
 
-    <div>
+    <div class="projects">
         <h2>
-            Contact
+            PROJECTS
         </h2>
+        <div class="work-row-one">
+            <div class="work-card-one">
+                <img alt="face-app" id="work-image-one" src="app.jpg" />
+                <h6>Application software</h6>
+                <h3>Application Name</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae fringilla nibh.
+                    Vestibulum luctus mollis ex, nec aliquet ex. Phasellus placerat dui ligula, id finibus nulla posuere
+                    eu.
+                    Etiam rutrum, sapien a facilisis varius, nisi tellus auctor sem, eget commodo leo ipsum nec felis.
+                    Aenean fermentum quam ut accumsan ullamcorper. Ut velit lorem, aliquet sit amet arcu at, fringilla
+                    interdum nunc.
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed suscipit
+                    elit eget odio
+                    aliquam ornare.
+                </p>
+                <p>Languages</p>
+                <button type="button" class="button-w">Download</button>
+                <button type="button" class="button-w">Repository</button>
+            </div>
+            <div class="work-card-one">
+                <img alt="face-app" id="work-image-one" src="app.jpg" />
+                <h6>Application software</h6>
+                <h3>Application Name</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae fringilla nibh.
+                    Vestibulum luctus mollis ex, nec aliquet ex. Phasellus placerat dui ligula, id finibus nulla posuere
+                    eu.
+                    Etiam rutrum, sapien a facilisis varius, nisi tellus auctor sem, eget commodo leo ipsum nec felis.
+                    Aenean fermentum quam ut accumsan ullamcorper. Ut velit lorem, aliquet sit amet arcu at, fringilla
+                    interdum nunc.
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed suscipit
+                    elit eget odio
+                    aliquam ornare.
+                </p>
+                <p>Languages</p>
+                <button type="button" class="button-w">Download</button>
+                <button type="button" class="button-w">Repository</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="form-container">
+            <form action="" method="post">
+                <h1 class="form-title">Contact me!</h1>
+                <div class="form-elements">
+                    <label for="fname">First name</label>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your first name" required />
+
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname" name="lname" placeholder="Enter your last name" required />
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required />
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Enter your message" required></textarea>
+
+                    <input class="button" type="submit" value="Submit" />
+                </div>
+            </form>
+        </div>
+
     </div>
 </body>
+
+<footer>
+    <div class="footer">
+        <hr>
+        <h2>Created by John Doe</h2>
+        <h3>2023</h3>
+    </div>
+</footer>
 
 </html>

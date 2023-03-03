@@ -1,0 +1,80 @@
+
+input[type=text], input[type=email], textarea {
+    display: block;
+    font: inherit;
+    font-size: 1em;
+    width: 30em;
+    border: 0;
+    border-radius: 0.2em 0.5em;
+    background-color: #D2DBED;
+}
+/*EP*/
+
+form {
+    font-size: 1.25em;
+}
+
+.form-elements {
+    margin: auto;
+    width: 80%;
+}
+
+label {
+    display: block;
+    font-size: 1.25em;
+    margin: 0.5rem 0;
+    
+}
+
+
+textarea {
+    resize: vertical;
+}
+
+.form-title {
+    text-align: center;
+    width: 10em;
+    padding: 0 0 1em 0;
+    margin: auto;
+    color:#FF7D00;
+    transition: 0.5s ease;
+}
+
+
+.form-container {
+    display: block;
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 50em;
+    color: #FFECD1;
+    border-radius: 5em 2em;
+    background-color: #15616D;
+}
+
+
+.button {
+    display: block;
+    margin: 1em auto auto auto;
+    border: none;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: inherit;
+
+    width: 3em;
+
+    background-color: #001524; 
+    border-radius: 0.5em 1em;
+    color: #001524;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background-color: #181616;
+    color: #FFECD1;
+    width: 6em;
+}
+
+.button:active {
+    background-color: #FF7D00;
+}

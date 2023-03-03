@@ -1,0 +1,71 @@
+/* [ON BIG SCREENS] */
+/* (A) WRAPPER */
+#topnav {
+    width: 101.5em;
+    margin: auto;
+    /* Optional */
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+  
+/* (B) HORIZONTAL MENU ITEMS */
+#navitems { 
+    display: flex; 
+}
+
+#navitems button {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    background-color: #001524;
+    border: 0;
+    color: #FFECD1;
+    text-decoration: none;
+    font-size: 2em;
+    text-align: center;
+    transition: 0.3s ease;
+  }
+/*EP*/
+
+#navitems button:hover { 
+    background: #78290F; 
+    border-bottom-left-radius: 4em;
+    border-bottom-right-radius: 10em;
+}
+  
+/* (C) HIDE HAMBURGER */
+
+#topnav label, #hamburger { 
+    display: none; 
+}
+  
+  /* [ON SMALL SCREENS] */
+  @media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    #navitems button {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
+  
+    /* (B) SHOW HAMBURGER ICON */
+    #topnav label {
+      display: inline-block;
+      color: white;
+      background: #a02620;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    #navitems { 
+        display: none; 
+    }
+    #topnav input:checked ~ #navitems { 
+        display: block; 
+    }
+  }
+  

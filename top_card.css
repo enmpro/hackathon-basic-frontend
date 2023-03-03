@@ -1,17 +1,34 @@
+/*
+color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
+*/
+
+/*EP*/
 html {
-    margin-top: 2em;
+    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
+    -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
     position: relative;
+    margin-top: -1em;
+    background-color: #001524;
     
 }
 
-.introcard {
-    text-align: center;
-    background: linear-gradient(90deg, #0060fa 55%, #ffba42 33%);
-    height: 50em;
+body {
+    margin-left: 2em;
+    margin-right: 2em;
 }
+
+
+
+.introcard {
+    margin-top: 2em;
+    text-align: center;
+    background: linear-gradient(90deg, #15616D 55%, #FF7D00 33%);
+    height: 50em;
+    margin-bottom: 2em;
+} 
 
 .namecard {
     display: flex;
@@ -54,9 +71,13 @@ html {
 }
 
 .namecard-2 {
-    margin: auto 4em auto auto;
-    color: #0060fa;
+    margin: auto 4em auto auto; 
+    color: #15616D;
 
+}
+
+.namecard-2 #title {
+    color: #FFECD1;
 }
 
 .namecard-2 #nameshapes {
@@ -68,7 +89,8 @@ html {
 } 
 
 .namecard-2 #smallinfo {
-    color: white;
+    color: #FFECD1;
+    margin-bottom: 2em;
 }
 
 .belowcard {
@@ -84,8 +106,23 @@ html {
     margin-right: 0em;
     height: 20em;
     justify-content: space-around;
-    color:#ffad1f;
+    color:#FF7D00;
 }
+
+.pointshape {
+    margin: 0;
+}
+
+#pointing {
+    position: absolute;
+    width: 40em;
+    height: 34.5em;
+    right: 6em;
+    top: 18em;
+    
+}
+
+
 .infosnip #infosnip-1 {
     width: 20em;
 }
@@ -96,21 +133,35 @@ html {
 
 .resume {
     
-    margin: auto 17.5em auto auto;
+    margin: auto 15.5em auto auto;
+    z-index: 1;
 }
 
 .resume #resume-button {
-    width: 7em;
-    height: 3em;
-    font-size: 2em;
-    background-color: #0060fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 9em;
+    height: 4em;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #78290F;
     border: 2px solid currentColor;
-    color: white;
+    color: #78290F;
+
+    border-radius: 1em 2em;
+    overflow: hidden;
+    
+    transition: 0.3s ease;
 }
 
+#resume-button:hover {
+    background-color: #15616D;
+    color: #FFECD1;
+    width: 11em;
+}
 
 @media (min-width: 701px) and (max-width: 1700px) {
     html, button {
         font-size: 0.94vw;
     }
 }
+
