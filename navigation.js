@@ -1,7 +1,8 @@
 //EP
 function scrollToAbout() {
+    var elem = document.querySelector(".aboutme");
     window.scroll({
-        top: 900,
+        top: elem.offsetTop,
         left: 0,
         behavior: "smooth"
     }) 
@@ -17,8 +18,9 @@ function scrollToSkills() {
 }
 
 function scrollToProjects() {
+    var elem = document.querySelector(".projects");
     window.scroll({
-        top: 2730,
+        top: elem.offsetTop,
         left: 0,
         behavior: "smooth"
     }) 
