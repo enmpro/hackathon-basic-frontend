@@ -11,19 +11,13 @@
     margin: auto;
 }
 
-.skills-container #skill-title {
-    text-align: center;
-}
+
 
 /* progress bars */
 
-.fullbar-html {
-    background-color: #D2DBED;
-    width: 100%;
-    border-radius: 15px;
-}
 
-.progressbar-html {
+
+/* .progressbar-html {
     background-color: #FF7D00;
     color: white;
     padding: 1%;
@@ -31,15 +25,40 @@
     font-size: 20px;
     border-radius: 15px;
     width: 90%;
-}
+} */
 
-.fullbar-css {
-    background-color: #D2DBED;
-    width:  100%;
+.fullbar-css h4, .fullbar-html h4, .fullbar-j h4, .fullbar-js h4, .fullbar-msq h4, .fullbar-o h4, .fullbar-p h4{
+    text-align: center;
+    
+    margin: auto;
+    width: auto;
+    font-size: 1.5em;
     border-radius: 15px;
+    height: 40px;
 }
-
-.progressbar-css {
+.front-end h3, .development-languages h3, .database h3 {
+    text-align: center;
+    margin: auto auto 1em auto;
+    width: auto;
+    font-size: 2em;
+    text-align: center;
+    /* margin-bottom: 1em; */
+}
+/* .flex .fullbar-css,.flex .fullbar-html,.flex .fullbar-j,.flex .fullbar-js,.flex .fullbar-msq,.flex .fullbar-o,.flex .fullbar-p {
+    width: 100%;
+} */
+.bar-container {
+    margin:0;
+    padding: 0;
+    background-color: none;
+}
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 1em 0 1em 0; */
+}
+/* .progressbar-css {
     background-color: #FF7D00;
     color: white;
     padding: 1%;
@@ -49,11 +68,6 @@
     width: 95%;
 }
 
-.fullbar-js {
-    background-color: #D2DBED;
-    width:  100%;
-    border-radius: 15px;
-}
 
 .progressbar-js {
     background-color: #FF7D00;
@@ -65,11 +79,7 @@
     width: 97%;
 }
 
-.fullbar-p {
-    background-color: #D2DBED;
-    width:  100%;
-    border-radius: 15px;
-}
+
 
 .progressbar-p {
     background-color: #FF7D00;
@@ -79,12 +89,6 @@
     font-size: 20px;
     border-radius: 15px;
     width: 80%;
-}
-
-.fullbar-j {
-    background-color: #D2DBED;
-    width:  100%;
-    border-radius: 15px;
 }
 
 .progressbar-j {
@@ -97,11 +101,6 @@
     width: 70%;
 }
 
-.fullbar-msq {
-    background-color: #D2DBED;
-    width:  100%;
-    border-radius: 15px;
-}
 
 .progressbar-msq {
     background-color: #FF7D00;
@@ -113,12 +112,6 @@
     width: 88%;
 }
 
-.fullbar-o {
-    background-color: #D2DBED;
-    width:  100%;
-    border-radius: 15px;
-}
-
 .progressbar-o {
     background-color: #FF7D00;
     color: white;
@@ -127,4 +120,4 @@
     font-size: 20px;
     border-radius: 15px;
     width: 50%;
-}
+} */
