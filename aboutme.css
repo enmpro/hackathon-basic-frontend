@@ -3,7 +3,13 @@ color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
 */
 
 .aboutme {
-    margin-left: 4em;
+    margin-right: auto;
+    border: 2px solid white;
+}
+
+.about-container {
+    width: auto;
+    margin: auto 10em auto;
 }
 
 .aboutme p {
@@ -85,6 +91,7 @@ color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
 .paragraph2 .word-shapes2 {
     display: flex;
     flex-wrap: nowrap;
+    
     margin: auto auto -4em auto;
 }
 
@@ -93,13 +100,14 @@ color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
     flex-basis: 37.5em;
 	flex-grow: 0;
 	flex-shrink: 0;
-    margin: auto auto auto 0em;
+    margin: auto auto auto auto;
 }
 
 .paragraph2 #p2-2 {
+   
     width: 37.5em;
     font-size: 1.5em;
-    margin: auto auto auto -8em;
+    margin: auto auto auto auto;
 }
 
 
