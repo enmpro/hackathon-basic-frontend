@@ -1,0 +1,156 @@
+/*
+color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
+*/
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 0em;
+}  
+.aboutme {
+    margin-left: 30em;
+    /* center everything*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme p {
+    color: #FFECD1;
+}
+
+.aboutme h3 {
+    color: #FFECD1;
+}
+
+.paragraph1 {
+    display: block;
+    margin: auto;
+    
+}
+
+.curiosity {
+    display: flex;
+}
+
+.curiosity #c1 {
+    flex: 27%;
+    position: relative;
+    top: 2em;
+}
+.curiosity #c2 {
+    flex: 60%;
+
+}
+
+#curious-shapes {
+    width: 30em;
+}
+
+.paragraph1 .word-shapes1 {
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+.paragraph1 h3 {
+    font-size: 2.75em;
+}
+
+.paragraph1 #p1-1 {
+    flex: 60%;
+    flex-basis: 31em;
+	flex-grow: 0;
+	flex-shrink: 0;
+    font-size: 1.5em;
+    margin: auto;
+}
+.paragraph1 #p1-2 {
+    flex: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+#paragraphshape1 {
+    width: 30em;
+}
+
+.paragraph2 h3 {
+    font-size: 1.75em;
+    display: block;
+    margin: auto;
+}
+
+#p2-2 h3 {
+    
+    position: relative;
+    margin: auto;
+    
+}
+/*EP*/
+#paragraphshape2 {
+    width: 30em;
+}
+
+.paragraph2 .word-shapes2 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto auto -4em auto;
+}
+
+.paragraph2 #p2-1 {
+    flex: 50%;
+    flex-basis: 37.5em;
+	flex-grow: 0;
+	flex-shrink: 0;
+    margin: auto auto auto 0em;
+}
+
+.paragraph2 #p2-2 {
+    width: 37.5em;
+    font-size: 1.5em;
+    margin: auto auto auto -8em;
+}
+
+
+.paragraph3 {
+    margin: auto;
+}
+
+.paragraph3 h3 {
+    font-size: 2.75em;
+}
+
+.word-shapes3 #p3-1 {
+    font-size: 1.5em;
+}
+
+.paragraph3 .word-shapes3 {
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+#paragraphshape3 {
+    width: 30em;
+}
+
+.paragraph3 h3 {
+    position: relative;
+    top: .5em;
+}
+
+.paragraph3 #p3-1 {
+    flex: 60%;
+    flex-basis: 30em;
+	flex-grow: 0;
+	flex-shrink: 0;
+    font-size: 1.5em;
+    margin: auto;
+}
+.paragraph3 #p3-2 {
+    flex: 50%;
+    text-align: center;
+    margin: auto;
+}
