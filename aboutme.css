@@ -9,7 +9,7 @@ color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
 
 .about-container {
     width: auto;
-    margin: auto 10em auto;
+    margin: auto 10em auto 12em;
 }
 
 .aboutme p {
