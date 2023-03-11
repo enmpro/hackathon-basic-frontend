@@ -4,47 +4,36 @@ color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
 
 /*EP*/
 html {
-
+    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
     position: relative;
+    margin-top: -1em;
     background-color: #001524;
-    color: #FFECD1;
-    font-size: 1.5em;
+    
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #001524;
-    color: #FFECD1;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 
-#pointing {
-    translate: translateX();
-    translate: translateY(10px);
-    transform: rotate(20deg);
-}
+
 .introcard {
-    position: relative;
-    width:100%;
-    /* margin-top: 1em; */
+    margin-top: 2em;
     text-align: center;
     background: linear-gradient(90deg, #15616D 55%, #FF7D00 33%);
-    height: 45em;
-    /* margin-bottom: 2em; */
-    border-bottom-left-radius: 34px;
-    border-bottom-right-radius: 34px;
-}
+    height: 50em;
+    margin-bottom: 2em;
+} 
 
 .namecard {
-    margin-left: -11em;
     display: flex;
     justify-content: space-evenly;
     height: 30em;
-    margin-bottom: 2em;
 }
 
 .namecard-1 {
@@ -84,52 +73,40 @@ body {
 .namecard-2 {
     margin: auto 4em auto auto; 
     color: #15616D;
+
 }
-.namecard-2 h1 {
-    font-size: 3.5em;
-    font-weight: 800;
-    margin-bottom: 0.5em;
-}
-.namecard-2 h2 {
-    text-transform: capitalize;
-}
+
 .namecard-2 #title {
     color: #FFECD1;
 }
 
 .namecard-2 #nameshapes {
-    position: relative;
+    position: absolute;
     width: 80em;
     height: 35em;
     left: 25em;
-    bottom: 20em;
+    bottom: 24em;
 } 
 
 .namecard-2 #smallinfo {
     color: #FFECD1;
     margin-bottom: 2em;
 }
-.namecard-2:has(h1,h2,p) {
-    margin-top: 3em;
-}
+
 .belowcard {
     display: flex;
     justify-content: space-evenly;
 }
 
 .infosnip {
-    /* center */
-    margin: auto 0 auto 0;
-    display: flex;
-    flex-direction: column;
+    display: block; 
     position: relative;
     margin-top: 4em;
-    margin-left: 14em;
+    margin-left: 30em;
     margin-right: 0em;
-    height: 10px;
+    height: 20em;
     justify-content: space-around;
     color:#FF7D00;
-    font-size:20px;
 }
 
 .pointshape {
@@ -142,32 +119,22 @@ body {
     height: 34.5em;
     right: 6em;
     top: 18em;
+    
 }
 
-.infosnip #infosnip-2, #infosnip-1 {
-    width: 26.9em;
-    text-align: left;
-    font-size: 18px;
-    margin-top:0;
-    margin-bottom: 0;
-    transform: translate(-21em,4em)
+
+.infosnip #infosnip-1 {
+    width: 20em;
 }
-.infosnip #infosnip-1{
-    margin-top: 0;
-    margin-bottom: 1em;
-}
+
 .infosnip #infosnip-2 {
-    margin-top: 0;
-    margin-bottom: 0;
+    width: 20em;
 }
+
 .resume {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    
     margin: auto 15.5em auto auto;
     z-index: 1;
-
 }
 
 .resume #resume-button {
@@ -190,7 +157,6 @@ body {
     background-color: #15616D;
     color: #FFECD1;
     width: 11em;
-    
 }
 
 @media (min-width: 701px) and (max-width: 1700px) {

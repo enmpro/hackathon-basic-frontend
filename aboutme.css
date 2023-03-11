@@ -1,22 +1,8 @@
 /*
 color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
 */
-* {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-::-webkit-scrollbar {
-    width: 0em;
-}  
+
 .aboutme {
-
-    margin-left: 30em;
-    /* center everything*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     margin-right: auto;
 }
 

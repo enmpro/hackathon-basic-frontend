@@ -1,13 +1,4 @@
-h4 {
-    font-size: medium;
-}
-.horizontal-line h3 {
-    font-size: 1.8em;
-    font-weight: 300;
-    margin: 0;
-    padding: 0;
-    margin-left: auto;
-}
+
 input[type=text], input[type=email], textarea {
     display: block;
     font: inherit;
@@ -28,11 +19,6 @@ form {
     width: 80%;
 }
 
-input[type="text"], input[type="email"], textarea #subject {
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-}
-
 label {
     display: block;
     font-size: 1.25em;
@@ -43,9 +29,6 @@ label {
 
 textarea {
     resize: vertical;
-    height: 10em;
-    width: 30.5em;
-    margin: 0.5rem 0;
 }
 
 .form-title {
@@ -59,9 +42,6 @@ textarea {
 
 
 .form-container {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
     display: block;
     margin: auto;
     padding-top: 2em;
@@ -70,7 +50,6 @@ textarea {
     color: #FFECD1;
     border-radius: 5em 2em;
     background-color: #15616D;
-    user-select: none;
 }
 
 
@@ -81,8 +60,9 @@ textarea {
     text-align: center;
     font-size: 1.5em;
     font-family: inherit;
+
     width: 3em;
-    height:2em;
+
     background-color: #001524; 
     border-radius: 0.5em 1em;
     color: #001524;
