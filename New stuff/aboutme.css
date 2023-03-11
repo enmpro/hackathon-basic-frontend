@@ -9,20 +9,12 @@ color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
     width: 0em;
 }  
 .aboutme {
-
     margin-left: 30em;
     /* center everything*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    margin-right: auto;
-}
-
-.about-container {
-    width: auto;
-    margin: auto 10em auto 12em;
 }
 
 .aboutme p {
@@ -104,7 +96,6 @@ color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
 .paragraph2 .word-shapes2 {
     display: flex;
     flex-wrap: nowrap;
-    
     margin: auto auto -4em auto;
 }
 
@@ -113,14 +104,13 @@ color swatches: #001524, #15616d, #ffecd1, #ff7d00, #78290f
     flex-basis: 37.5em;
 	flex-grow: 0;
 	flex-shrink: 0;
-    margin: auto auto auto auto;
+    margin: auto auto auto 0em;
 }
 
 .paragraph2 #p2-2 {
-   
     width: 37.5em;
     font-size: 1.5em;
-    margin: auto auto auto auto;
+    margin: auto auto auto -8em;
 }
 
 
